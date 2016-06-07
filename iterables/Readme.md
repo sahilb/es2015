@@ -1,5 +1,5 @@
 For each data structure, iteration is a basic and common operation. so the goal is to have a common interface to do that.
-One way to achienve this is ES2015 feature : for-of-loop
+One way to achieve this is ES2015 feature : for-of-loop
 
 Native objects like arrays, sets, maps, etc implement this interface already.
 For custom data structures like LinkedList, Trees, etc we need to explicitly implement the interface.
