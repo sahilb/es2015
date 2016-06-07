@@ -2,7 +2,7 @@ class LinkedList {
     constructor(val) {
         this.root = createNode(val);
         this.last = this.root;
-        this[Symbol.iterator] = this.iteratorFunction.bind(this);
+        this[Symbol.iterator] = (() => this.iteratorFunction());
     }
     append(value) {
         this.last = this.last.NEXT = createNode(value);

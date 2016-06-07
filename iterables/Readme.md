@@ -1,7 +1,8 @@
-For each data structure, iteration is a basic and common operation, so the goal is to have a common interface to do that.
+For each data structure, iteration is a basic and common operation. so the goal is to have a common interface to do that.
+One way to achienve this is ES2015 feature : for-of-loop
 
-The language construct: for-of loop, is the common interface.
-Native objects like arrays, sets, maps, etc implement this interface but for custom objects like LinkedList, Trees, etc we need to explicitly implement the interface.
+Native objects like arrays, sets, maps, etc implement this interface already.
+For custom data structures like LinkedList, Trees, etc we need to explicitly implement the interface.
 
 This is done using Symbol.iterator. LinkedList.js demonstrates that.
 
