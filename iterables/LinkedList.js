@@ -2,7 +2,7 @@ class LinkedList {
     constructor(val) {
         this.root = createNode(val);
         this.last = this.root;
-        this[Symbol.iterator] = (() => this.iteratorFunction2());
+        this[Symbol.iterator] = (() => this.iteratorFunction3());
     }
     append(value) {
         this.last = this.last.NEXT = createNode(value);
@@ -33,6 +33,14 @@ class LinkedList {
         if (node) {
             yield node.value;
             yield * this.traverse(node.NEXT);
+        }
+    }
+    // not using recursion
+    *iteratorFunction3() {
+        var node = this.root;
+        while(node){
+            yield node.value;
+            node = node.NEXT;
         }
     }
 }
