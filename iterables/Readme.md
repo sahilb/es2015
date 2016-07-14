@@ -15,5 +15,7 @@ for (let i of obj) {
 Use case:
 Sum of elements of an Array vs LinkedList vs Tree vs Custom Data Structure
 
+References:
+https://medium.com/javascript-scene/7-surprising-things-i-learned-writing-a-fibonacci-generator-4886a5c87710#.szspbmtml
 
 
